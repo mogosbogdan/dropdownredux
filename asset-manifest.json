@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dropdownredux/static/css/main.e6c13ad2.css",
+    "main.js": "/dropdownredux/static/js/main.4079692e.js",
+    "static/js/787.f6f8fbb1.chunk.js": "/dropdownredux/static/js/787.f6f8fbb1.chunk.js",
+    "index.html": "/dropdownredux/index.html",
+    "main.e6c13ad2.css.map": "/dropdownredux/static/css/main.e6c13ad2.css.map",
+    "main.4079692e.js.map": "/dropdownredux/static/js/main.4079692e.js.map",
+    "787.f6f8fbb1.chunk.js.map": "/dropdownredux/static/js/787.f6f8fbb1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.4079692e.js"
+  ]
+}
