@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import "../App.css";
 
 function Card() {
   const selectedOption = useSelector((state) => state.selectedOption);
@@ -18,7 +19,7 @@ function Card() {
   };
 
   return (
-    <div>
+    <div className="card">
       <h3>Card component</h3>
       {renderCardContent()}
     </div>

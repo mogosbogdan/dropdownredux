@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setSelectedOption } from "../redux/actions";
+import "../App.css";
 
 function DropdownMenu() {
   const dispatch = useDispatch();
@@ -11,7 +12,7 @@ function DropdownMenu() {
   };
 
   return (
-    <div>
+    <div className="drop">
       <label htmlFor="dropdown">Select an option:</label>
       <select id="dropdown" value={selectedOption} onChange={handleOptionSelect}>
         <option value="option1">Option 1</option>
