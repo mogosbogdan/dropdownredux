@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setSelectedOption } from "../redux/actions";
+import { options } from "./options";
 import "../App.css";
 
 function DropdownMenu() {
@@ -14,10 +15,16 @@ function DropdownMenu() {
   return (
     <div className="drop">
       <label htmlFor="dropdown">Select an option:</label>
-      <select id="dropdown" value={selectedOption} onChange={handleOptionSelect}>
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-        <option value="option3">Option 3</option>
+      <select
+        id="dropdown"
+        value={selectedOption}
+        onChange={handleOptionSelect}
+      >
+        {options.map((option) => (
+          <option key={option.value} value={option.value}>
+            {option.label}
+          </option>
+        ))}
       </select>
     </div>
   );
