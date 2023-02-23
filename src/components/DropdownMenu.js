@@ -4,7 +4,7 @@ import { setSelectedOption } from "../redux/actions";
 import { options } from "./options";
 import "../App.css";
 
-function DropdownMenu() {
+const DropdownMenu = () => {
   const dispatch = useDispatch();
   const selectedOption = useSelector((state) => state.selectedOption);
 
@@ -14,7 +14,6 @@ function DropdownMenu() {
 
   return (
     <div className="drop">
-      <label htmlFor="dropdown">Select an option:</label>
       <select
         id="dropdown"
         value={selectedOption}
@@ -28,6 +27,6 @@ function DropdownMenu() {
       </select>
     </div>
   );
-}
+};
 
 export default DropdownMenu;

@@ -3,26 +3,21 @@ import { useSelector } from "react-redux";
 import { options } from "./options";
 import "../App.css";
 
-function Card() {
+const Card = () => {
   const selectedOption = useSelector((state) => state.selectedOption);
 
-  const renderCardContent = () => {
+  const RenderCardContent = () => {
     const selectedOptionObject = options.find(
       (option) => option.value === selectedOption
     );
-    return selectedOptionObject ? (
-      <p>{selectedOptionObject.content}</p>
-    ) : (
-      <p>Please select an option</p>
-    );
+    return <p>{selectedOptionObject.content}</p>;
   };
 
   return (
     <div className="card">
-      <h3>Card component</h3>
-      {renderCardContent()}
+      <RenderCardContent />
     </div>
   );
-}
+};
 
 export default Card;
