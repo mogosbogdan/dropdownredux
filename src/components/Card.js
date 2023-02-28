@@ -5,17 +5,13 @@ import "../App.css";
 
 const Card = () => {
   const selectedOption = useSelector((state) => state.selectedOption);
-
-  const RenderCardContent = () => {
-    const selectedOptionObject = options.find(
-      (option) => option.value === selectedOption
-    );
-    return <p>{selectedOptionObject.content}</p>;
-  };
+  const selectedOptionObject = options.find(
+    (option) => option.value === selectedOption
+  );
 
   return (
     <div className="card">
-      <RenderCardContent />
+      <p>{selectedOptionObject.content}</p>
     </div>
   );
 };
